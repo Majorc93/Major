@@ -1,2 +1,5 @@
-print("Hello")
-print("Hi")
+##print("Hello")
+##print("Hi")
+
+import PyQt5
+
