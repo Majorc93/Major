@@ -93,7 +93,7 @@ class Ui_Cal(object):
         self.pushButtonplus = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("+"))
         self.pushButtonplus.setGeometry(QtCore.QRect(420, 520, 81, 81))
         self.pushButtonplus.setObjectName("pushButtonplus")
-        self.pushButtonCE = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("CE"))
+        self.pushButtonCE = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("Del"))
         self.pushButtonCE.setGeometry(QtCore.QRect(60, 630, 201, 71))
         self.pushButtonCE.setObjectName("pushButtonCE")
         self.pushButtonC = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("C"))
@@ -161,7 +161,7 @@ class Ui_Cal(object):
         self.pushButton0.setText(_translate("Cal", "0"))
         self.pushButtondeci.setText(_translate("Cal", "."))
         self.pushButtonplus.setText(_translate("Cal", "+"))
-        self.pushButtonCE.setText(_translate("Cal", "CE"))
+        self.pushButtonCE.setText(_translate("Cal", "Del"))
         self.pushButtonC.setText(_translate("Cal", "C"))
         self.label.setText(_translate("Cal", "0"))
 
