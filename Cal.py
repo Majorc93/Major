@@ -54,7 +54,7 @@ class Ui_Cal(object):
         self.pushButton9 = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("9"))
         self.pushButton9.setGeometry(QtCore.QRect(300, 190, 81, 81))
         self.pushButton9.setObjectName("pushButton9")
-        self.pushButtondiv = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("%"))
+        self.pushButtondiv = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("/"))
         self.pushButtondiv.setGeometry(QtCore.QRect(420, 190, 81, 81))
         self.pushButtondiv.setObjectName("pushButtondiv")
         self.pushButton4 = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("4"))
