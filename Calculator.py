@@ -1,4 +1,4 @@
-from PyQt5.Qtwidgets import
+from PyQt5.QtWidgets import
 
 app = Qapplication([])
 
