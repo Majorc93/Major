@@ -81,19 +81,19 @@ class Ui_Cal(object):
         self.pushButtonminus = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("-"))
         self.pushButtonminus.setGeometry(QtCore.QRect(420, 410, 81, 81))
         self.pushButtonminus.setObjectName("pushButtonminus")
-        self.pushButtonequal = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("="))
+        self.pushButtonequal = QtWidgets.QPushButton(Cal, clicked= lambda: self.math_it())
         self.pushButtonequal.setGeometry(QtCore.QRect(60, 520, 81, 81))
         self.pushButtonequal.setObjectName("pushButtonequal")
         self.pushButton0 = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("0"))
         self.pushButton0.setGeometry(QtCore.QRect(180, 520, 81, 81))
         self.pushButton0.setObjectName("pushButton0")
-        self.pushButtondeci = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("."))
+        self.pushButtondeci = QtWidgets.QPushButton(Cal, clicked= lambda: self.dot_it())
         self.pushButtondeci.setGeometry(QtCore.QRect(300, 520, 81, 81))
         self.pushButtondeci.setObjectName("pushButtondeci")
         self.pushButtonplus = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("+"))
         self.pushButtonplus.setGeometry(QtCore.QRect(420, 520, 81, 81))
         self.pushButtonplus.setObjectName("pushButtonplus")
-        self.pushButtonCE = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("Del"))
+        self.pushButtonCE = QtWidgets.QPushButton(Cal, clicked= lambda: self.remove_it())
         self.pushButtonCE.setGeometry(QtCore.QRect(60, 630, 201, 71))
         self.pushButtonCE.setObjectName("pushButtonCE")
         self.pushButtonC = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("C"))
@@ -131,6 +131,27 @@ class Ui_Cal(object):
 
         self.retranslateUi(Cal)
         QtCore.QMetaObject.connectSlotsByName(Cal)
+
+    def math_it(self):
+        screen = self.label.text()
+        try:
+            answer = eval(screen)
+            self.label.setText(str(answer))
+        except:
+            self.label.setText("ERROR")
+
+    def remove_it(self):
+        screen = self.label.text()
+        screen = screen[:-1]
+        self.label.setText(screen)
+
+    def dot_it(self):
+        screen = self.label.text()
+
+        if screen[-1] == ".":
+            pass
+        else:
+            self.label.setText(f'{screen}.')
 
     def press_it(self, pressed):
         if pressed == "C":
