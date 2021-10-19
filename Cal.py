@@ -42,7 +42,7 @@ class Ui_Cal(object):
 "     background:#ffffff;\n"
 "    border:none;\n"
 "    font-family: Arial, Helvetica, sans-serif;\n"
-"    font-size:60px;\n"
+"    font-size:45px;\n"
 "    color:black;\n"
 "}")
         self.pushButton7 = QtWidgets.QPushButton(Cal, clicked= lambda: self.press_it("7"))
