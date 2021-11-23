@@ -25,10 +25,10 @@ LARGE_CACTUS = [pygame.image.load(os.path.join("Python-Proj\DINO", "LargeCactus1
                 pygame.image.load(os.path.join("Python-Proj\DINO", "LargeCactus2.png")),
                 pygame.image.load(os.path.join("Python-Proj\DINO", "LargeCactus3.png"))]
 
-BIRD = [pygame.image.load(os.path.join("Python-Proj\DINO", "Bird1.png")),
-        pygame.image.load(os.path.join("Python-Proj\DINO", "Bird2.png"))]
+BIRD = [pygame.image.load(os.path.join("Python-Proj\DINO", "BirdRE.png")),
+        pygame.image.load(os.path.join("Python-Proj\DINO", "BirdRE.png"))]
 
-CLOUD = pygame.image.load(os.path.join("Python-Proj\DINO", "Cloud.png"))
+CLOUD = pygame.image.load(os.path.join("Python-Proj\DINO", "GOKU1.png"))
 
 BG = pygame.image.load(os.path.join("Python-Proj\DINO", "Track.png"))
 
