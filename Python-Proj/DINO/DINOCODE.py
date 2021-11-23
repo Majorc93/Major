@@ -3,17 +3,21 @@ import os
 import random
 pygame.init()
 
-# Global Constants
+
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 1100
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
+##RUNNING ACTION IMG
 RUNNING = [pygame.image.load(os.path.join("Python-Proj\DINO", "DinoRun1.png")),
            pygame.image.load(os.path.join("Python-Proj\DINO", "DinoRun2.png"))]
+##JUMPING ACTION IMG
 JUMPING = pygame.image.load(os.path.join("Python-Proj\DINO", "DinoJump.png"))
+##DUCKING ACTION IMG
 DUCKING = [pygame.image.load(os.path.join("Python-Proj\DINO", "DinoDuck1.png")),
            pygame.image.load(os.path.join("Python-Proj\DINO", "DinoDuck2.png"))]
 
+##IN GAME OBJECT IMG
 SMALL_CACTUS = [pygame.image.load(os.path.join("Python-Proj\DINO", "SmallCactus1.png")),
                 pygame.image.load(os.path.join("Python-Proj\DINO", "SmallCactus2.png")),
                 pygame.image.load(os.path.join("Python-Proj\DINO", "SmallCactus3.png"))]
