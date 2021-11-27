@@ -33,6 +33,7 @@ CLOUD = pygame.image.load(os.path.join("Python-Proj\DINO", "GOKU2.png"))
 
 BG = pygame.image.load(os.path.join("Python-Proj\DINO", "Track.png"))
 
+FELOGO = pygame.image.load(os.path.join("Python-Proj\DINO", "FELOGO.png"))
 
 class Dinosaur:
     X_POS = 80
@@ -259,7 +260,7 @@ def menu(death_count):
         textRect = text.get_rect()
         textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
         SCREEN.blit(text, textRect)
-        SCREEN.blit(RUNNING[0], (SCREEN_WIDTH // 2 - 20, SCREEN_HEIGHT // 2 - 140))
+        SCREEN.blit(FELOGO, (SCREEN_WIDTH // 2 - 20, SCREEN_HEIGHT // 2 - 140))
         pygame.display.update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
