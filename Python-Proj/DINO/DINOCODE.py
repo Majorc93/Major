@@ -13,7 +13,7 @@ SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 RUNNING = [pygame.image.load(os.path.join("Python-Proj\DINO", "DinoRun1.png")),
            pygame.image.load(os.path.join("Python-Proj\DINO", "DinoRun2.png"))]
 ##JUMPING ACTION IMG
-JUMPING = pygame.image.load(os.path.join("Python-Proj\DINO", "DinoJump.png"))
+JUMPING = pygame.image.load(os.path.join("Python-Proj\DINO", "meme2.png"))
 ##DUCKING ACTION IMG
 DUCKING = [pygame.image.load(os.path.join("Python-Proj\DINO", "DinoDuck1.png")),
            pygame.image.load(os.path.join("Python-Proj\DINO", "DinoDuck2.png"))]
