@@ -10,30 +10,30 @@ SCREEN_WIDTH = 1100
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 ##RUNNING ACTION IMG
-RUNNING = [pygame.image.load(os.path.join("Python-Proj\DINO", "DinoRun1.png")),
-           pygame.image.load(os.path.join("Python-Proj\DINO", "DinoRun2.png"))]
+RUNNING = [pygame.image.load(os.path.join("Python-Proj", "DinoRun1.png")),
+           pygame.image.load(os.path.join("Python-Proj", "DinoRun2.png"))]
 ##JUMPING ACTION IMG
-JUMPING = pygame.image.load(os.path.join("Python-Proj\DINO", "meme2.png"))
+JUMPING = pygame.image.load(os.path.join("Python-Proj", "meme2.png"))
 ##DUCKING ACTION IMG
-DUCKING = [pygame.image.load(os.path.join("Python-Proj\DINO", "DinoDuck1.png")),
-           pygame.image.load(os.path.join("Python-Proj\DINO", "DinoDuck2.png"))]
+DUCKING = [pygame.image.load(os.path.join("Python-Proj", "DinoDuck1.png")),
+           pygame.image.load(os.path.join("Python-Proj", "DinoDuck2.png"))]
 
 ##IN GAME OBJECT IMG
-SMALL_CACTUS = [pygame.image.load(os.path.join("Python-Proj\DINO", "SmallCactus1.png")),
-                pygame.image.load(os.path.join("Python-Proj\DINO", "SmallCactus2.png")),
-                pygame.image.load(os.path.join("Python-Proj\DINO", "SmallCactus3.png"))]
-LARGE_CACTUS = [pygame.image.load(os.path.join("Python-Proj\DINO", "LargeCactus1.png")),
-                pygame.image.load(os.path.join("Python-Proj\DINO", "LargeCactus2.png")),
-                pygame.image.load(os.path.join("Python-Proj\DINO", "LargeCactus3.png"))]
+SMALL_CACTUS = [pygame.image.load(os.path.join("Python-Proj", "SmallCactus1.png")),
+                pygame.image.load(os.path.join("Python-Proj", "SmallCactus2.png")),
+                pygame.image.load(os.path.join("Python-Proj", "SmallCactus3.png"))]
+LARGE_CACTUS = [pygame.image.load(os.path.join("Python-Proj", "LargeCactus1.png")),
+                pygame.image.load(os.path.join("Python-Proj", "LargeCactus2.png")),
+                pygame.image.load(os.path.join("Python-Proj", "LargeCactus3.png"))]
 
-BIRD = [pygame.image.load(os.path.join("Python-Proj\DINO", "jet2.png")),
-        pygame.image.load(os.path.join("Python-Proj\DINO", "jet2.png"))]
+BIRD = [pygame.image.load(os.path.join("Python-Proj", "jet2.png")),
+        pygame.image.load(os.path.join("Python-Proj", "jet2.png"))]
 
-CLOUD = pygame.image.load(os.path.join("Python-Proj\DINO", "GOKU2.png"))
+CLOUD = pygame.image.load(os.path.join("Python-Proj", "GOKU2.png"))
 
-BG = pygame.image.load(os.path.join("Python-Proj\DINO", "Track.png"))
+BG = pygame.image.load(os.path.join("Python-Proj", "Track.png"))
 
-FELOGO = pygame.image.load(os.path.join("Python-Proj\DINO", "FELOGO.png"))
+FELOGO = pygame.image.load(os.path.join("Python-Proj", "FELOGO.png"))
 
 class Dinosaur:
     X_POS = 80

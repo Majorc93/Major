@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/choose/BLACK.jpg);</string>
+  </property>
+  <widget class="QPushButton" name="CONNECTButton">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>190</y>
+     <width>271</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/WHITE/WHITE.jpg);
+font: 28pt &quot;OCR A Extended&quot;;</string>
+   </property>
+   <property name="text">
+    <string>CONNECT 4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DINOButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>190</y>
+     <width>271</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/WHITE/WHITE.jpg);
+font: 28pt &quot;OCR A Extended&quot;;</string>
+   </property>
+   <property name="text">
+    <string>DINO GAME</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>531</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 36pt &quot;Sylfaen&quot;;
+color: rgb(0, 25, 255);</string>
+   </property>
+   <property name="text">
+    <string>Please Choose Your Game</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>741</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/DINO/DinoJump.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>101</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/DINO/LargeCactus3.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>350</y>
+     <width>101</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/DINO/LargeCactus2.png);</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="D:/download/QTD/back1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
