@@ -16,6 +16,7 @@ import os
 import random
 import subprocess
 import DINOCODE
+
 pygame.init()
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -42,7 +43,7 @@ class Ui_Form(object):
         self.label.setStyleSheet("font: 36pt \"Sylfaen\";\n"
 "color: rgb(0, 25, 255);")
         self.label.setObjectName("label")
-        self.DINOButton.clicked.connect(lambda:subprocess.call("DINOCODE.py"))
+        self.DINOButton.clicked.connect(DINOCODE.startdino())
         
 
         self.retranslateUi(Form)
