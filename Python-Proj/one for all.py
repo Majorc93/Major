@@ -41,12 +41,8 @@ def runnow():
             self.label.setStyleSheet("font: 36pt \"Sylfaen\";\n"
     "color: rgb(0, 25, 255);")
             self.label.setObjectName("label")
-            #self.DINOButton.clicked(DN.startdino())
-            #self.CONNECTButton.clicked(CN.startconnect())
 
             self.retranslateUi(Form)
-            #self.CONNECTButton.clicked(CN.startconnect())
-            #self.DINOButton.clicked(DN.startdino())
             QtCore.QMetaObject.connectSlotsByName(Form)
 
         def retranslateUi(self, Form):
