@@ -289,6 +289,4 @@ def startdino():
                 if event.type == pygame.KEYDOWN:
                     main()
     menu(death_count=0)
-startdino()
 
-                
