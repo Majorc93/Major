@@ -1,10 +1,15 @@
+from typing import Text
 import pygame
 import os
 import sys
 import random
+import time
 pygame.init()
 
+
 def startdino():
+    global best
+    best = 0
     SCREEN_HEIGHT = 600
     SCREEN_WIDTH = 1100
     SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -68,11 +73,11 @@ def startdino():
             if self.step_index >= 10:
                 self.step_index = 0
 
-            if userInput[pygame.K_UP] and not self.dino_jump:
+            if userInput[pygame.K_w] and not self.dino_jump:
                 self.dino_duck = False
                 self.dino_run = False
                 self.dino_jump = True
-            elif userInput[pygame.K_DOWN] and not self.dino_jump:
+            elif userInput[pygame.K_s] and not self.dino_jump:
                 self.dino_duck = True
                 self.dino_run = False
                 self.dino_jump = False
@@ -80,6 +85,7 @@ def startdino():
                 self.dino_duck = False
                 self.dino_run = True
                 self.dino_jump = False
+
 
         def duck(self):
             self.image = self.duck_img[self.step_index // 5]
@@ -170,7 +176,7 @@ def startdino():
 
 
     def main():
-        global game_speed, x_pos_bg, y_pos_bg, points, obstacles
+        global game_speed, x_pos_bg, y_pos_bg, points, obstacles, best
         run = True
         clock = pygame.time.Clock()
         player = Dinosaur()
@@ -184,10 +190,12 @@ def startdino():
         death_count = 0
 
         def score():
-            global points, game_speed
+            global points, game_speed, best
             points += 1
             if points % 100 == 0:
                 game_speed += 1
+            if points > best:
+                best = points
 
             text = font.render("Points: " + str(points), True, (0, 0, 0))
             textRect = text.get_rect()
@@ -243,7 +251,7 @@ def startdino():
 
 
     def menu(death_count):
-        global points
+        global points, best
         run = True
         while run:
             SCREEN.fill((255, 255, 255))
@@ -252,11 +260,23 @@ def startdino():
             if death_count == 0:
                 text = font.render("Press any Key to Start", True, (0, 0, 0))
             elif death_count > 0:
+                #if points == 0:
+                    #best = points
+                #elif points > best:
+                    #points = points
+                #elif points < best:
+                    #best = points
+
+
                 text = font.render("Press any Key to Restart", True, (0, 0, 0))
                 score = font.render("Your Score: " + str(points), True, (0, 0, 0))
                 scoreRect = score.get_rect()
                 scoreRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 50)
                 SCREEN.blit(score, scoreRect)
+                highscore = font.render("High Score: " + str(best), True, (0, 0, 0))
+                highscoreRect = highscore.get_rect()
+                highscoreRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100)
+                SCREEN.blit(highscore, highscoreRect)
             textRect = text.get_rect()
             textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
             SCREEN.blit(text, textRect)
@@ -269,3 +289,6 @@ def startdino():
                 if event.type == pygame.KEYDOWN:
                     main()
     menu(death_count=0)
+startdino()
+
+                
