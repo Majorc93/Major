@@ -194,6 +194,8 @@ def startdino():
             points += 1
             if points % 100 == 0:
                 game_speed += 1
+            if points > best:
+                best = points
 
             text = font.render("Points: " + str(points), True, (0, 0, 0))
             textRect = text.get_rect()
@@ -264,6 +266,10 @@ def startdino():
                 scoreRect = score.get_rect()
                 scoreRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 50)
                 SCREEN.blit(score, scoreRect)
+                highscore = font.render("High Score: " + str(best), True, (0, 0, 0))
+                highscoreRect = highscore.get_rect()
+                highscoreRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100)
+                SCREEN.blit(highscore, highscoreRect)
             textRect = text.get_rect()
             textRect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
             SCREEN.blit(text, textRect)
