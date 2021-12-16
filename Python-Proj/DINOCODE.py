@@ -283,3 +283,4 @@ def startdino():
                     main()
     menu(death_count=0)
 
+startdino()
