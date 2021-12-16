@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'GAMEMENU.ui'
+# Menu implementation generated from reading ui file 'GAMEMENU.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -21,44 +21,44 @@ pygame.init()
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 def runnow():
-    class Ui_Form(object):
-        def setupUi(self, Form):
-            Form.setObjectName("Form")
-            Form.resize(721, 420)
-            Form.setStyleSheet("background-color: rgb(0, 0, 0);")
-            self.CONNECTButton = QtWidgets.QPushButton(Form, clicked= lambda: CN.startconnect())
+    class Ui_Menu(object):
+        def setupUi(self, Menu):
+            Menu.setObjectName("Menu")
+            Menu.resize(721, 420)
+            Menu.setStyleSheet("background-color: rgb(0, 0, 0);")
+            self.CONNECTButton = QtWidgets.QPushButton(Menu, clicked= lambda: CN.startconnect())
             self.CONNECTButton.setGeometry(QtCore.QRect(400, 190, 271, 151))
             self.CONNECTButton.setStyleSheet("font: 28pt \"OCR A Extended\";\n"
     "background-color: rgb(255, 255, 255);")
             self.CONNECTButton.setObjectName("CONNECTButton")
-            self.DINOButton = QtWidgets.QPushButton(Form, clicked= lambda: DN.startdino())
+            self.DINOButton = QtWidgets.QPushButton(Menu, clicked= lambda: DN.startdino())
             self.DINOButton.setGeometry(QtCore.QRect(60, 190, 271, 151))
             self.DINOButton.setStyleSheet("font: 28pt \"OCR A Extended\";\n"
     "background-color: rgb(255, 255, 255);")
             self.DINOButton.setObjectName("DINOButton")
-            self.label = QtWidgets.QLabel(Form)
+            self.label = QtWidgets.QLabel(Menu)
             self.label.setGeometry(QtCore.QRect(100, 80, 531, 91))
             self.label.setStyleSheet("font: 36pt \"Sylfaen\";\n"
     "color: rgb(0, 25, 255);")
             self.label.setObjectName("label")
 
-            self.retranslateUi(Form)
-            QtCore.QMetaObject.connectSlotsByName(Form)
+            self.retranslateUi(Menu)
+            QtCore.QMetaObject.connectSlotsByName(Menu)
 
-        def retranslateUi(self, Form):
+        def retranslateUi(self, Menu):
             _translate = QtCore.QCoreApplication.translate
-            Form.setWindowTitle(_translate("Form", "Form"))
-            self.CONNECTButton.setText(_translate("Form", "CONNECT 4"))
-            self.DINOButton.setText(_translate("Form", "DINO GAME"))
-            self.label.setText(_translate("Form", "Please Choose Your Game"))
+            Menu.setWindowTitle(_translate("Menu", "Menu"))
+            self.CONNECTButton.setText(_translate("Menu", "CONNECT 4"))
+            self.DINOButton.setText(_translate("Menu", "DINO GAME"))
+            self.label.setText(_translate("Menu", "Please Choose Your Game"))
 
 
     if __name__ == "__main__":
         import sys
         app = QtWidgets.QApplication(sys.argv)
-        Form = QtWidgets.QWidget()
-        ui = Ui_Form()
-        ui.setupUi(Form)
-        Form.show()
+        Menu = QtWidgets.QWidget()
+        ui = Ui_Menu()
+        ui.setupUi(Menu)
+        Menu.show()
         sys.exit(app.exec_())
 runnow()
